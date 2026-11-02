@@ -1,0 +1,276 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+html{
+  scroll-behavior:smooth;
+}
+
+*{
+  transition:
+    color .3s ease,
+    background .3s ease,
+    transform .3s ease,
+    box-shadow .3s ease,
+    opacity .3s ease;
+}
+
+body{
+  background:#050814;
+  color:#e5e7eb;
+  overflow-x:hidden;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:18px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(5,8,20,0.7);
+  backdrop-filter:blur(10px);
+  z-index:100;
+}
+header{
+  transition:background .4s ease, box-shadow .4s ease;
+}
+
+header:hover{
+  background:rgba(5,8,20,0.85);
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+
+.logo{
+  font-size:1.4rem;
+  font-weight:700;
+  color:#38bdf8;
+}
+
+nav a{
+  margin-left:25px;
+  color:#cbd5f5;
+  text-decoration:none;
+  position:relative;
+  transition:.3s;
+}
+
+nav a::after{
+  content:'';
+  position:absolute;
+  bottom:-6px;
+  left:0;
+  width:0;
+  height:2px;
+  background:#38bdf8;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+nav a:hover::after{
+  width:100%;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:0 8%;
+  background-image: url("Images/im.jpeg");
+  background-size: cover;
+}
+.hero{
+  position:relative;
+  overflow:hidden;
+}
+
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(56,189,248,.12), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(34,197,94,.12), transparent 40%);
+  z-index:-1;
+  transition:transform .2s ease;
+}
+
+.hero h1,
+.hero h2,
+.hero p{
+  transition:transform .5s ease, opacity .5s ease;
+}
+
+.hero:hover h1{
+  transform:translateY(-4px);
+}
+
+.hero:hover p{
+  opacity:.9;
+}
+
+
+.hero-content{
+  animation:fadeUp 1.2s ease forwards;
+}
+
+.hero h1{
+  font-size:3rem;
+}
+.hero h1 span{
+  color:#38bdf8;
+}
+
+.hero h2{
+  margin:15px 0;
+  color:#22c55e;
+}
+
+.hero p{
+  max-width:500px;
+  color:#cbd5f5;
+}
+
+.hero button{
+  margin-top:30px;
+  padding:14px 40px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(to right,#38bdf8,#22c55e);
+  color:#020617;
+  font-weight:600;
+  cursor:pointer;
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    background .4s ease;
+}
+
+.hero button:hover{
+  transform:translateY(-3px) scale(1.05);
+  box-shadow:0 20px 40px rgba(56,189,248,.4);
+}
+
+
+/* SECTIONS */
+section{
+  padding:90px 8%;
+}
+
+h2{
+  color:#38bdf8;
+  margin-bottom:20px;
+}
+
+/* ABOUT */
+.about p{
+  max-width:700px;
+  color:#cbd5f5;
+}
+
+/* SKILLS */
+.skill-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+}
+
+.skill-card{
+  background:#020617;
+  padding:15px;
+  text-align:center;
+  border-radius:15px;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    background .35s ease;
+}
+
+.skill-card:hover{
+  background:#020617;
+  transform:translateY(-10px);
+  box-shadow:0 20px 45px rgba(56,189,248,.35);
+}
+
+.project-card{
+  background:#020617;
+  padding:25px;
+  border-radius:15px;
+  margin-bottom:20px;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.project-card:hover{
+  transform:translateY(-8px) scale(1.02);
+  box-shadow:0 25px 55px rgba(34,197,94,.3);
+}
+
+
+
+/* CONTACT */
+.contact p{
+  color:#cbd5f5;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#020617;
+  color:#94a3b8;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    gap:10px;
+  }
+  .hero h1{
+    font-size:2.2rem;
+  }
+}
+.cursor-glow{
+  position:fixed;
+  top:0;
+  left:0;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  pointer-events:none;
+  background:radial-gradient(
+    circle,
+    rgba(56,189,248,0.15),
+    rgba(56,189,248,0.05),
+    transparent 60%
+  );
+  transform:translate(-50%,-50%);
+  z-index:0;
+  transition:opacity .3s ease;
+}
+.hero button,
+.skill-card,
+.project-card{
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+  will-change:transform;
+}
