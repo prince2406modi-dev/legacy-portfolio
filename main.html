@@ -3,139 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Portfolio | Web Developer</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <title>LEGACY | Software Engineer &amp; Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">LEGACY</div>
+  <div class="logo"><span class="logo-icon">&#11041;</span> LEGACY.</div>
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#vision">Vision</a>
     <a href="#contact">Contact</a>
   </nav>
+  <a href="#contact" class="nav-btn">Let's Connect &rarr;</a>
 </header>
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Hello, I'm <span>Student Developer</span></h1>
-    <h2 id="role">Software Developer</h2>
-    <p>I design clean UI, write efficient code, and build modern web experiences.</p>
-    <button>Explore Work</button>
+  <div class="hero-left">
+    <h1 class="hero-title">LEGACY IS MY<br><span class="gradient-text">FOUNDATION.</span></h1>
+    <p class="hero-sub">Think Beyond Limits. Build Without Boundaries. Leave a Legacy.</p>
+    <p class="hero-desc">An aspiring Software Engineer exploring technology, cloud computing, and entrepreneurship.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">Explore My Work &rarr;</a>
+      <a href="#vision" class="btn-outline">Discover My Vision</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><h4>B.Tech</h4><p>Student</p></div>
+      <div class="stat-item"><h4>Building</h4><p>Innovations</p></div>
+      <div class="stat-item"><h4>Dreaming</h4><p>Bigger</p></div>
+    </div>
+    <div class="scroll-down"><span class="mouse-icon"></span> Scroll Down</div>
+  </div>
+  <div class="hero-visual">
+    <div class="globe-glow"></div>
+    <img src="Images/hero-globe.png" alt="Cosmic Tech Globe" class="globe-img">
   </div>
 </section>
 
 <!-- ABOUT -->
 <section class="about" id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a student web developer passionate about technology, coding, and design.
-    I love turning ideas into interactive digital experiences.
-  </p>
+  <div class="about-left">
+    <div class="section-tag">ABOUT ME</div>
+    <h2 class="section-title">Beyond the Code.<br>Beyond the <span class="gradient-text">Ordinary.</span></h2>
+    <p class="about-desc">I'm a B.Tech student with a passion for software engineering, cloud technologies, and innovation. I love turning ideas into real-world solutions and building a better future through tech.</p>
+    <div class="about-cards">
+      <div class="about-card">
+        <div class="card-icon">&#10022;</div>
+        <h4>Mindset</h4>
+        <p>Curious &amp; Ambitious</p>
+      </div>
+      <div class="about-card">
+        <div class="card-icon">&#9874;</div>
+        <h4>Approach</h4>
+        <p>Learn. Build. Improve</p>
+      </div>
+      <div class="about-card">
+        <div class="card-icon">&#9670;</div>
+        <h4>Direction</h4>
+        <p>Technology &amp; Impact</p>
+      </div>
+    </div>
+    <a href="#contact" class="btn-outline btn-know">Know More &rarr;</a>
+  </div>
+  <div class="about-visual">
+    <div class="stack-glow"></div>
+    <img src="Images/about-stack.png" alt="3D Isometric Tech Stack" class="stack-img">
+  </div>
 </section>
 
 <!-- SKILLS -->
 <section class="skills" id="skills">
-  <h2>Skills</h2>
-  <div class="skill-grid">
-    <div class="skill-card">HTML</div>
-    <div class="skill-card">CSS</div>
-    <div class="skill-card">JavaScript</div>
-    <div class="skill-card">UI / UX</div>
-    <div class="skill-card">Git & GitHub</div>
-    <div class="skill-card">Responsive Design</div>
+  <div class="section-tag">MY TECHNICAL ARSENAL</div>
+  <h2 class="arsenal-title">The Tools Behind My Vision.</h2>
+  <div class="arsenal-layout">
+    <div class="arsenal-main">
+      <div class="arsenal-grid">
+        <div class="arsenal-card">
+          <div class="arsenal-icon">&lt;/&gt;</div>
+          <h3>Programming</h3>
+          <p>Python &bull; C &bull; Java</p>
+        </div>
+        <div class="arsenal-card">
+          <div class="arsenal-icon">&#127760;</div>
+          <h3>Web Development</h3>
+          <p>HTML &bull; CSS &bull; JavaScript</p>
+        </div>
+        <div class="arsenal-card">
+          <div class="arsenal-icon">&#9729;</div>
+          <h3>Cloud</h3>
+          <p>AWS</p>
+        </div>
+        <div class="arsenal-card">
+          <div class="arsenal-icon">&#128202;</div>
+          <h3>Data &amp; Analytics</h3>
+          <p>NumPy &bull; Pandas &bull; Matplotlib</p>
+        </div>
+      </div>
+      <div class="exploring-box">
+        <div class="exploring-header">
+          <span class="exploring-tag">Currently Exploring:</span>
+          <span class="exploring-desc">AI &bull; Cloud Architecture &bull; Advanced Software Engineering</span>
+        </div>
+        <div class="exploring-bar"><div class="exploring-fill"></div></div>
+      </div>
+    </div>
+    <div class="arsenal-visual">
+      <div class="visual-glow"></div>
+      <img src="Images/skills-laptop.png" alt="Futuristic Tech Workspace">
+    </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section class="projects" id="projects">
-  <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>Portfolio Website</h3>
-    <p>Animated personal portfolio with modern UI.</p>
+  <div class="projects-top">
+    <div>
+      <div class="section-tag">MY PROJECTS</div>
+      <h2 class="section-title">Proof of Work, Not Just Words.</h2>
+    </div>
+    <span class="badge-featured">Featured Project</span>
   </div>
-
-  <div class="project-card">
-    <h3>Gaming Landing Page</h3>
-    <p>Dark-theme gaming platform UI.</p>
-  </div>
-
-  <div class="project-card">
-    <h3>Edu Platform</h3>
-    <p>Learning website for coding students.</p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2>Contact</h2>
-  <p>Email: vistara@example.com</p>
-  <div class="contact-wrapper">
-    <div class="contact-info">
-      <div class="info-card">
-        <span class="info-icon">&#128231;</span>
-        <div class="info-text">
-          <h3>Quick Connect</h3>
-          <p>Open for freelance work &amp; internships</p>
-        </div>
+  <div class="projects-layout">
+    <div class="featured-card">
+      <div class="mockup-wrap">
+        <img src="Images/project-mockup.png" alt="TREAD Dashboard UI" class="mockup-img">
       </div>
-      <div class="info-card">
-        <span class="info-icon">&#128205;</span>
-        <div class="info-text">
-          <h3>Location</h3>
-          <p>Available worldwide (Remote)</p>
+      <div class="featured-details">
+        <h3>TREAD</h3>
+        <p>Smart Business &amp; GST Accounting Software to simplify billing and business operations.</p>
+        <div class="tech-tags">
+          <span>React</span><span>Node.js</span><span>MongoDB</span>
         </div>
-      </div>
-      <div class="info-card">
-        <span class="info-icon">&#128279;</span>
-        <div class="info-text">
-          <h3>Profiles</h3>
-          <div class="social-tags">
-            <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
-          </div>
+        <div class="project-btns">
+          <a href="#" class="btn-primary btn-sm">View Project &rarr;</a>
+          <a href="https://github.com/prince2406modi-dev/Tread" target="_blank" class="btn-outline btn-sm">GitHub &#10138;</a>
         </div>
       </div>
     </div>
-    <form class="contact-form" onsubmit="event.preventDefault();alert('Message sent successfully!');">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="c-name">Your Name</label>
-          <input type="text" id="c-name" placeholder="John Doe" required>
-        </div>
-        <div class="form-group">
-          <label for="c-email">Your Email</label>
-          <input type="email" id="c-email" placeholder="john@example.com" required>
-        </div>
+    <div class="side-projects">
+      <div class="mini-card">
+        <div class="mini-icon icon-aws">&#9729;</div>
+        <div><h4>AWS Portfolio</h4><p>Cloud-hosted portfolio with AWS services.</p></div>
       </div>
-      <div class="form-group">
-        <label for="c-sub">Subject</label>
-        <input type="text" id="c-sub" placeholder="Project Inquiry" required>
+      <div class="mini-card">
+        <div class="mini-icon icon-data">&#128202;</div>
+        <div><h4>Data Analytics</h4><p>Python-based data analysis and visualization.</p></div>
       </div>
-      <div class="form-group">
-        <label for="c-msg">Message</label>
-        <textarea id="c-msg" rows="4" placeholder="Hi! Let's build something together..." required></textarea>
-      </div>
-      <button type="submit" class="contact-btn">Send Message &rarr;</button>
-    </form>
+      <a href="https://github.com" target="_blank" class="mini-card mini-link">
+        <div class="mini-icon icon-gh">&#128187;</div>
+        <div><h4>More Projects</h4><p>On My GitHub &rarr;</p></div>
+      </a>
+    </div>
   </div>
 </section>
 
-<footer>
-  © 2026 VistaraCode • Built with Passion
-</footer>
-<div class="cursor-glow"></div>
+<!-- BOTTOM ROW: VISION & CONTACT -->
+<div class="bottom-grid">
+  <!-- VISION -->
+  <section class="vision" id="vision">
+    <div class="vision-content">
+      <div class="section-tag">MY VISION</div>
+      <h2 class="section-title">Think Beyond What Exists.</h2>
+      <p class="vision-desc">My ambition is to build transformative technology, create scalable businesses, and leave a lasting impact on the world.</p>
+      <div class="vision-pillars">
+        <div class="pillar-item"><div class="pillar-orb">&#10022;</div><h4>Innovation</h4><p>Solve Problems</p></div>
+        <div class="pillar-item"><div class="pillar-orb">&#9881;</div><h4>Entrepreneurship</h4><p>Build Solutions</p></div>
+        <div class="pillar-item"><div class="pillar-orb">&#10024;</div><h4>Legacy</h4><p>Inspire Generations</p></div>
+      </div>
+    </div>
+    <img src="Images/vision-mountain.png" alt="Cosmic Vision Peak" class="vision-bg-img">
+  </section>
 
-<script src="script.js"></script>
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-info-panel">
+      <div class="section-tag">GET IN TOUCH</div>
+      <h2 class="section-title">Great Things Begin<br>With Conversations.</h2>
+      <p class="contact-sub">Let's connect and explore what's possible.</p>
+      <div class="social-row">
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">&#128101;</a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub">&#128187;</a>
+        <a href="#" aria-label="AWS">&#9729;</a>
+        <a href="mailto:vistara@example.com" aria-label="Email">&#9993;</a>
+      </div>
+    </div>
+    <form class="quick-form" onsubmit="event.preventDefault();alert('Message sent successfully!');">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="3" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary btn-full">Send Message &rarr;</button>
+    </form>
+  </section>
+</div>
+
+<footer>
+  &copy; 2026 LEGACY &bull; Think Beyond Limits. Build Without Boundaries.
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
