@@ -1,7 +1,4 @@
-/**
- * LEGACY Portfolio - Interactive Cyber Experience
- * Production JavaScript for animations, 3D tilt, scroll spy & interactions.
- */
+
 document.addEventListener('DOMContentLoaded', () => {
   initScrollHeader();
   initTypingEffect();
@@ -13,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
 });
 
-/* 1. STICKY HEADER & SCROLL PROGRESS */
 function initScrollHeader() {
   const header = document.querySelector('header');
   const progressBar = document.createElement('div');
@@ -34,7 +30,7 @@ function initScrollHeader() {
     }
   });
 }
-/* 2. DYNAMIC TYPING EFFECT IN HERO */
+
 function initTypingEffect() {
   const roles = ['Software Engineer', 'Cloud Innovator', 'Full-Stack Developer', 'Tech Entrepreneur'];
   const targetElement = document.querySelector('.hero-desc');
@@ -96,7 +92,7 @@ function initScrollSpy() {
     });
   });
 }
-/* 4. 3D CARD TILT ON MOUSEMOVE */
+
 function initCard3DTilt() {
   const cards = document.querySelectorAll('.about-card, .arsenal-card, .featured-card, .mini-card');
   cards.forEach(card => {
@@ -112,7 +108,7 @@ function initCard3DTilt() {
     });
   });
 }
-/* 5. CYBER GLOW CURSOR TRACKER */
+
 function initCursorGlow() {
   const glow = document.createElement('div');
   glow.className = 'cursor-ambient-glow';
@@ -123,7 +119,7 @@ function initCursorGlow() {
     glow.style.top = `${e.clientY}px`;
   });
 }
-/* 6. SCROLL REVEAL OBSERVER */
+
 function initScrollReveal() {
   const revealElements = document.querySelectorAll('.about-card, .arsenal-card, .featured-card, .mini-card, .pillar-item');
   const observer = new IntersectionObserver((entries, obs) => {
@@ -142,7 +138,7 @@ function initScrollReveal() {
     observer.observe(el);
   });
 }
-/* 7. INTERACTIVE BUTTON RIPPLES */
+
 function initButtonRipples() {
   const buttons = document.querySelectorAll('.btn-primary, .btn-outline, .nav-btn');
   buttons.forEach(btn => {
@@ -164,7 +160,7 @@ function initButtonRipples() {
   styleSheet.textContent = '@keyframes rippleEffect{to{transform:scale(3.5);opacity:0;}}'; 
   document.head.appendChild(styleSheet);
 }
-/* 8. CONTACT FORM WITH CYBER TOAST */
+
 function initContactForm() {
   const form = document.querySelector('.quick-form');
   if (!form) return;
@@ -182,7 +178,7 @@ function initContactForm() {
     }, 800);
   });
 }
-/* TOAST NOTIFICATION */
+
 function showToast(msg) {
   const toast = document.createElement('div');
   toast.style.cssText = 'position:fixed;bottom:25px;right:25px;background:rgba(4,9,26,0.95);border:1px solid #38bdf8;box-shadow:0 0 20px rgba(56,189,248,0.4);color:#fff;padding:14px 24px;border-radius:12px;font-size:0.88rem;font-weight:600;z-index:9999;transform:translateY(50px);opacity:0;transition:all 0.4s ease;';
